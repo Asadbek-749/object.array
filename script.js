@@ -58,5 +58,61 @@ for (let i = 0; i <= n2; i++) {
   arr2.push(m2 ** i);
 }
 console.log(arr2);
+console.log("");
 
 // 3-masala
+let A = 5;
+let D = 3;
+let n1 = 6;
+const Ai = [];
+Ai[0] = A;
+
+for (let i = 1; i < n1; i++) {
+  Ai[i] = Ai[i - 1] + D;
+}
+console.log(Ai);
+console.log("");
+
+// 18-masala
+let n18 = 2;
+let arr18 = [];
+let natija;
+
+for (let i = 1; i <= n18; i++) {
+  arr18.push(i);
+}
+
+if (arr18.length < 1) {
+  natija = 0;
+  console.log(natija);
+} else {
+  arr18.pop();
+  console.log(arr18);
+}
+console.log("");
+console.log("");
+
+// 19-masala
+let n19 = 3;
+let arr19 = [];
+let natija19;
+
+for (let i = 1; i <= n19; i++) {
+  arr19.push(i);
+
+  // if (arr19[0] < arr19[i] && arr19[i] < arr19[arr19.length - 1]) {
+  //   arr19.push(i);
+  // }
+}
+
+if (arr19.length < 1) {
+  natija19 = 0;
+  console.log(natija19);
+} else {
+  arr19.pop();
+  arr19.shift();
+  console.log(arr19);
+}
+
+// 20-masala
+let N = 5;
