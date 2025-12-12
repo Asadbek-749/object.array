@@ -115,4 +115,72 @@ if (arr19.length < 1) {
 }
 
 // 20-masala
-let N = 5;
+let N = 6;
+let K = 2;
+let L = 4;
+let arr20 = []; //[1,2,3,4,5,6]
+let summ = 0;
+let summA = 0;
+
+for (let i = 1; i <= N; i++) {
+  arr20.push(i);
+}
+
+if (0 <= K && K <= L && L < N) {
+  for (let i = K; i <= L; i++) {
+    summ += arr20[i];
+    summA++;
+  }
+}
+
+console.log("K dan L yig'indisi:", summ);
+// 21-masala
+console.log("K dan L o'rta arifmetigi:", summ / summA);
+
+// 22-masala
+let N22 = 6;
+let K22 = 2;
+let L22 = 4;
+let arr22 = []; //[1,2,3,4,5,6]
+let summ22 = 0;
+let summA22 = 0;
+for (let i = 1; i <= N22; i++) {
+  arr22.push(i);
+}
+
+if (0 <= K22 && K22 <= L22 && L22 < N22) {
+  arr22.splice(K22, L22 - K22 + 1); // K dan L gacha o‘chiradi
+}
+
+for (let i = 0; i < arr22.length; i++) {
+  summ22 += arr22[i];
+  summA22++;
+}
+
+console.log("K va L dan tashqari yi'gindisi:", summ22);
+
+// 23-masala
+console.log("K va L dan tashqari o'rta arifmetigi:", summ22 / summA22);
+
+// 24-masala
+let N24 = 5;
+let arr24 = [];
+let AP = true;
+
+for (let i = 0; i < N24; i++) {
+  arr24.push(i);
+}
+
+let d = arr24[1] - arr24[0];
+
+for (let i = 1; i < arr24.length; i++) {
+  if (arr24[i] - arr24[i - 1] !== d) {
+    AP = false;
+    break;
+  }
+}
+if (AP === true) {
+  console.log("Arifmetik progresssiya ayirmasi:", d);
+} else {
+  console.log(0);
+}
