@@ -184,3 +184,62 @@ if (AP === true) {
 } else {
   console.log(0);
 }
+
+// 66-masala
+const arr66 = [3, 5, 4, 2, 8, 5];
+let juft = 0;
+
+for (let i = 1; i <= arr66.length; i++) {
+  if (arr66[i] % 2 === 0) {
+    console.log(arr66[i]);
+    juft = arr66[i];
+  }
+}
+
+for (let i = 0; i < arr66.length; i++) {
+  if (arr66[i] % 2 === 0) {
+    arr66[i] += juft;
+  }
+}
+
+console.log(arr66);
+
+// 67-masala;
+const m = [2, 56, 7, 9];
+let et = 0;
+for (let i = 0; i <= m.length; i++) {
+  if (m[i] % 2 === 1) {
+    et = m[i];
+  }
+}
+for (let i = 0; i < m.length; i++) {
+  if (m[i] % 2 === 1) {
+    m[i] += et;
+  }
+}
+console.log(m);
+
+// 68-masala
+const arr68 = [3, 25, 4, 16, 7, 19];
+let engKatta = arr68[0];
+let engKichik = arr68[0];
+
+for (let i = 0; i < arr68.length; i++) {
+  if (arr68[i] > engKatta) {
+    engKatta = arr68[i];
+  }
+  if (arr68[i] < engKichik) {
+    engKichik = arr68[i];
+  }
+}
+console.log("Eng katta son", engKatta);
+console.log("Eng kichik son", engKichik);
+
+let indexKatta = arr68.indexOf(engKatta);
+let indexKichik = arr68.indexOf(engKichik);
+
+let temp = arr68[indexKatta];
+arr68[indexKatta] = arr68[indexKichik];
+arr68[indexKichik] = temp;
+
+console.log(arr68);
